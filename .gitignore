@@ -1,0 +1,25 @@
+# 빌드 결과물
+sensor_simulator
+webserver
+
+# 로그 파일
+*.log
+
+# 임시 파일
+*.tmp
+*.swp
+
+# 가상환경/IDE/OS 파일
+myenv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+
+# PID 파일
+*.pid
+
+# 기타
+*.o
+*.out
+
