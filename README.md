@@ -1,6 +1,6 @@
 # IoT Linux SmartFarm (C++ Edition)
 
-센서 시뮬레이터와 C++ 기반 REST API, Chart.js 대시보드를 활용한 IoT 데이터 파이프라인 데모 프로젝트입니다.
+센서 시뮬레이터와 C++ 기반 REST API, Chart.js 대시보드를 활용한 IoT 데이터 파이프라인 데모 프로젝트
 
 ---
 
@@ -45,6 +45,8 @@
 ## 실행 결과 예시
 
 - API 응답(JSON)  
+<img width="1440" alt="Screenshot 2025-05-30 at 11 13 57 PM" src="https://github.com/user-attachments/assets/232a8725-4b88-49af-b577-ccfb862aebf4" />
+
 
 ```cpp
 // sensor_simulator.cpp
@@ -92,8 +94,7 @@
 
 ## 문제 해결 경험 (이슈 → 해결 과정)
 
-> 개발 과정에서 포트 충돌, HTTP chunked encoding 오류, 파일 경로 문제, Multipass 네트워크/포트포워딩 등 다양한 실전 이슈를 경험했습니다.  
-> 각 문제 상황마다 lsof, curl, 브라우저 개발자 도구, 로그 분석 등 다양한 도구로 원인을 진단하고,  
-> HTTP 응답 헤더 직접 작성, 파일 위치 일치, 자동화 스크립트 도입 등으로 신속하게 해결했습니다.  
-> 이 과정에서 실무에서 요구되는 문제해결력과 시스템적 사고를 키웠습니다.
+> 개발 과정에서 포트 충돌, HTTP chunked encoding 오류, 파일 경로 문제, Multipass 네트워크/포트포워딩 등 다양한 실전 이슈를 경험
+> 각 문제 상황마다 lsof, curl, 브라우저 개발자 도구, 로그 분석 등 다양한 도구로 원인을 진단  
+> HTTP 응답 헤더 직접 작성, 파일 위치 일치, 자동화 스크립트 도입 등으로 해결  
 
