@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>IoT 데이터 대시보드</h1>
+    <canvas id="sensorChart"></canvas>
+    <script>
+        async function drawChart() {
+            const res = await fetch('/api/data');
+            const data = await res.json();
+            if (!Array.isArray(data) || data.length === 0) {
+                document.body.innerHTML += "<p>데이터 없음</p>";
+                return;
+            }
+            const labels = data.map(row => row.timestamp);
+            const temperatures = data.map(row => row.temperature);
+            const humidities = data.map(row => row.humidity);
+            new Chart(document.getElementById('sensorChart').getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        { label: 'Temperature', data: temperatures, borderColor: 'red' },
+                        { label: 'Humidity', data: humidities, borderColor: 'blue' }
+                    ]
+                }
+            });
+        }
+        drawChart();
+    </script>
+</body>
+</html>
+
