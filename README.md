@@ -45,8 +45,7 @@
 ## 실행 결과 예시
 
 - API 응답(JSON)  
-<img width="1440" alt="Screenshot 2025-05-30 at 11 13 57 PM" src="https://github.com/user-attachments/assets/232a8725-4b88-49af-b577-ccfb862aebf4" />
-
+<img width="537" alt="Screenshot 2025-05-30 at 8 29 58 PM" src="https://github.com/user-attachments/assets/f8bfb666-94c1-4902-b8f6-1aa90189f99e" />
 
 ```cpp
 // sensor_simulator.cpp
@@ -58,6 +57,9 @@
  * - 파일 접근 동시성 문제를 방지하기 위해 std::mutex 사용
  */
 ```
+
+<img width="1440" alt="Screenshot 2025-05-30 at 11 13 57 PM" src="https://github.com/user-attachments/assets/232a8725-4b88-49af-b577-ccfb862aebf4" />
+
 
 ```cpp
 // webserver.cpp
