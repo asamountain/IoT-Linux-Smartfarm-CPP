@@ -1,3 +1,6 @@
+<img width="1440" alt="Screenshot 2025-05-30 at 11 13 57 PM" src="https://github.com/user-attachments/assets/232a8725-4b88-49af-b577-ccfb862aebf4" />
+
+
 # IoT Linux SmartFarm (C++ Edition)
 
 센서 시뮬레이터와 C++ 기반 REST API, Chart.js 대시보드를 활용한 IoT 데이터 파이프라인 데모 프로젝트
@@ -66,7 +69,6 @@
  */
 ```
 
-<img width="1440" alt="Screenshot 2025-05-30 at 11 13 57 PM" src="https://github.com/user-attachments/assets/232a8725-4b88-49af-b577-ccfb862aebf4" />
 
 
 ```cpp
